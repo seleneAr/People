@@ -28,8 +28,7 @@ namespace People
             List<string> Saludar(string Saludado, string personaQueSaluda)
             {
                 List<string> people = new List<string>();
-
-                
+             
                 if (Saludado.Equals(personaQueSaluda))
                 {
                     people.Add(personaQueSaluda);
@@ -46,7 +45,6 @@ namespace People
                         }                  
                         people.AddRange(Saludar( tuple.Item1, personaQueSaluda));
                     }
-                  
                 }
                 return people;
             }
